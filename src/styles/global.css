@@ -1235,9 +1235,32 @@ body {
   font-size: 14px;
   color: #777;
 }
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container span {
+  cursor: pointer;
+  font-size: 18px;
+}
+
 .nav-search {
-  width: 140px;
-  padding: 6px 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 160px;
+}
+.mobile-search {
+  margin-top: 20px;
+}
+
+.mobile-search input {
+  width: 100%;
+  padding: 10px;
   border-radius: 20px;
   border: 1px solid #ddd;
   outline: none;
