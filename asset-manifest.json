@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Skincare-store/static/css/main.81aaec31.css",
+    "main.css": "/Skincare-store/static/css/main.ed340c0a.css",
     "main.js": "/Skincare-store/static/js/main.8440c5d5.js",
     "index.html": "/Skincare-store/index.html",
-    "main.81aaec31.css.map": "/Skincare-store/static/css/main.81aaec31.css.map",
+    "main.ed340c0a.css.map": "/Skincare-store/static/css/main.ed340c0a.css.map",
     "main.8440c5d5.js.map": "/Skincare-store/static/js/main.8440c5d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.81aaec31.css",
+    "static/css/main.ed340c0a.css",
     "static/js/main.8440c5d5.js"
   ]
 }
