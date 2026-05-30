@@ -1235,3 +1235,10 @@ body {
   font-size: 14px;
   color: #777;
 }
+.nav-search {
+  width: 140px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+}

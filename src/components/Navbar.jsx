@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const cart = context?.cart || [];
   const wishlist = context?.wishlist || [];
-
+const { search, setSearch } = useContext(ShopContext);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -26,7 +26,13 @@ export default function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/login">Login</Link>
-
+<input
+  className="nav-search"
+  type="text"
+  placeholder="Search..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+/>
         <Link to="/wishlist">
           ❤️ {wishlist.length > 0 && <span>•</span>}
         </Link>
