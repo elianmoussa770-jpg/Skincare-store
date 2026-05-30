@@ -23,8 +23,7 @@ export default function Wishlist() {
           {wishlist.map((item) => (
             <div className="shop-card" key={item.id}>
 
-              <img src={item.img} alt={item.name} />
-
+<img src={item.image || item.img} alt={item.name} />
               <h3>{item.name}</h3>
 
               <p>${item.price}</p>

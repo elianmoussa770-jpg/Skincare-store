@@ -1045,7 +1045,26 @@ body {
     min-width: 100%;
     margin: 0 auto;
   }
+.shop-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shop-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr !important;
+  }
 
+  .shop-card {
+    max-width: 100%;
+  }
+}
   /* FORCED SINGLE COLUMN GRID */
   .shop-grid,
   .products-grid,
