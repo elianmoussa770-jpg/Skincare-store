@@ -16,15 +16,19 @@ export default function Footer() {
       <div className="footer-col">
         <h4>Help</h4>
         <Link to="/faq">FAQ</Link>
+        <Link to="/faq">Shipping</Link>
+        <Link to="/faq">Contact Us</Link>
       </div>
 
       {/* POLICIES */}
       <div className="footer-col">
         <h4>Policies</h4>
         <Link to="/privacy">Privacy Policy</Link>
+        <Link to="/privacy">Terms & Conditions</Link>
+        <Link to="/privacy">Return Policy</Link>
       </div>
 
-      {/* BRAND (optional but usually you had it) */}
+      {/* BRAND */}
       <div className="footer-col">
         <h3>D'you</h3>
         <p>Glow naturally with skincare that feels simple and effective.</p>
