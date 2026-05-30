@@ -1,4 +1,16 @@
+import { useState } from "react";
+
 export default function Newsletter() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleSubscribe = () => {
+    setShowPopup(true);
+
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 2500);
+  };
+
   return (
     <section className="newsletter">
 
@@ -15,11 +27,18 @@ export default function Newsletter() {
           placeholder="Enter your email"
         />
 
-        <button className="main-btn">
+        <button className="main-btn" onClick={handleSubscribe}>
           Subscribe
         </button>
 
       </div>
+
+      {/* POPUP */}
+      {showPopup && (
+        <div className="popup">
+          Successfully subscribed 🎉
+        </div>
+      )}
 
     </section>
   );
