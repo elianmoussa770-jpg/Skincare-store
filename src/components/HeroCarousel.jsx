@@ -21,7 +21,6 @@ export default function HeroCarousel() {
           alt="Skincare"
           style={{
             width: "100%",
-            height: "750px",
             objectFit: "cover"
           }}
         />
@@ -29,7 +28,7 @@ export default function HeroCarousel() {
         <div
           style={{
             position: "absolute",
-            top: "78%",
+            top: "70%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             textAlign: "center",
@@ -59,14 +58,13 @@ export default function HeroCarousel() {
         </div>
       </div>
 
-      {/* SLIDE 2 (TOP FOCUS FIX) */}
+      {/* SLIDE 2 */}
       <div style={{ position: "relative" }}>
         <img
           src="https://www.dyou.co/cdn/shop/files/sweatshirt.png?v=1755778999"
           alt="Luxury skincare"
           style={{
             width: "100%",
-            height: "750px",
             objectFit: "cover",
             objectPosition: "center top"
           }}
@@ -75,7 +73,7 @@ export default function HeroCarousel() {
         <div
           style={{
             position: "absolute",
-            top: "78%",
+            top: "70%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             textAlign: "center",
@@ -112,7 +110,6 @@ export default function HeroCarousel() {
           alt="Beauty"
           style={{
             width: "100%",
-            height: "750px",
             objectFit: "cover"
           }}
         />
@@ -120,7 +117,7 @@ export default function HeroCarousel() {
         <div
           style={{
             position: "absolute",
-            top: "78%",
+            top: "70%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             textAlign: "center",

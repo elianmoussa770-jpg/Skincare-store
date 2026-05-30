@@ -1,26 +1,24 @@
-import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function Success() {
-
   return (
-    <div
-      style={{
-        textAlign: "center",
-        padding: "120px 20px"
-      }}
-    >
+    <div className="success-page">
 
-      <h1>✨ Order Placed Successfully ✨</h1>
+      <div className="success-content">
 
-      <p style={{ margin: "20px 0" }}>
-        Thank you for shopping with D'you.
-      </p>
+        <h1>Thank you for your order 💖</h1>
 
-      <Link to="/">
-        <button className="main-btn">
-          Back Home
-        </button>
-      </Link>
+        <p>
+          “Self-care is the best kind of luxury.”
+        </p>
+
+        <p className="small">
+          Your order with D'you has been placed successfully and is being prepared.
+        </p>
+
+      </div>
+
+      <Footer />
 
     </div>
   );
