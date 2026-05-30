@@ -11,14 +11,35 @@
 body {
   background: #fff;
   color: #222;
-  margin: 0;
-  padding-top: 80px;
   overflow-x: hidden;
+  padding-top: 80px;
 }
 
-/* ======================
+/* =====================
+   GLOBAL WRAPPER
+===================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =====================
+   TYPOGRAPHY
+===================== */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* =====================
    NAVBAR
-====================== */
+===================== */
 .navbar {
   display: flex;
   align-items: center;
@@ -50,17 +71,10 @@ body {
   color: #ff4f8b;
 }
 
-/* =====================
-   HEADINGS
-===================== */
-h1, h2, h3 {
-  font-weight: 600;
-}
-
-h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* =====================
@@ -98,31 +112,7 @@ button:hover {
 }
 
 /* =====================
-   PRODUCT CARD
-===================== */
-.product-card {
-  min-width: 260px;
-  background: white;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  text-align: center;
-  padding-bottom: 20px;
-  transition: 0.4s;
-}
-
-.product-card:hover {
-  transform: translateY(-10px);
-}
-
-.product-card img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-}
-
-/* =====================
-   GRIDS
+   GRIDS (CORE)
 ===================== */
 .shop-grid,
 .products-grid {
@@ -146,13 +136,42 @@ button:hover {
 }
 
 /* =====================
-   SHOP CARD
+   CARDS
 ===================== */
-.shop-card {
+.product-card,
+.shop-card,
+.testimonial-card {
   background: white;
   border-radius: 18px;
-  overflow: hidden;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.product-card {
+  text-align: center;
+  padding-bottom: 20px;
+  min-width: 260px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-card:hover,
+.shop-card:hover,
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+/* =====================
+   NEWSLETTER
+===================== */
+.newsletter {
+  width: 100%;
+  background: #fff4f8;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -169,17 +188,29 @@ button:hover {
 }
 
 /* =====================
-   NEWSLETTER
+   ICON BADGES
 ===================== */
-.newsletter {
-  width: 100%;
-  background: #fff4f8;
-  padding: 80px 20px;
-  text-align: center;
+.icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff4f8b;
+  color: white;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* =====================
-   MOBILE FIX (SAFE ONLY)
+   MOBILE RESPONSIVE (CLEAN)
 ===================== */
 @media (max-width: 768px) {
 
@@ -193,10 +224,6 @@ button:hover {
 
   .carousel .slide img {
     height: 220px;
-  }
-
-  section {
-    padding: 40px 15px;
   }
 
   .shop-grid,
@@ -218,7 +245,11 @@ button:hover {
   .footer {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  section {
+    padding: 40px 15px;
   }
 }
 
