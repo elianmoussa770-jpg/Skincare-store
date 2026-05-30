@@ -958,3 +958,90 @@ body {
     word-wrap: break-word;
   }
 }
+/* =========================
+   MOBILE REDESIGN FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR - CLEAN MOBILE STYLE */
+  .navbar {
+    padding: 12px 15px;
+    flex-direction: row;
+  }
+
+  .nav-links {
+    display: none; /* keeps it clean */
+  }
+
+  .menu-icon {
+    font-size: 26px;
+  }
+
+  /* HERO / CAROUSEL */
+  .carousel .slide img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  /* SECTION SPACING FIX */
+  section {
+    padding: 40px 15px;
+  }
+
+  /* PRODUCT + SHOP CARDS */
+  .product-card,
+  .shop-card {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* FORCED SINGLE COLUMN GRID */
+  .shop-grid,
+  .products-grid,
+  .explore-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  /* BUTTONS FIX */
+  .main-btn,
+  .view-all-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* FOOTER CLEAN */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  /* CATEGORY PAGE */
+  .category-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .carousel .slide img {
+    height: 180px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+}
