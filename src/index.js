@@ -1,15 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import ShopProvider from "./context/ShopContext";
+
+import "./styles/global.css"; // MUST match your real path
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <ShopProvider>
-    <HashRouter>
+    <BrowserRouter basename="/Skincare-store">
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </ShopProvider>
 );
