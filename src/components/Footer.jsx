@@ -1,40 +1,12 @@
-import { Link } from "react-router-dom";
-
-
-<Link to="/shop">Shop</Link>
 export default function Footer() {
   return (
-    <footer className="footer">
-
-      {/* BRAND */}
-      <div className="footer-col">
-        <h3>D'you</h3>
-      </div>
-
-      {/* SHOP */}
-      <div className="footer-col">
-        <h4>Shop</h4>
-        <link to="/home">Home</link>
-        <link to ="/shop">Shop</link>
-<Link to="/shop">All Products</Link>
-      </div>
-
-      {/* HELP */}
-      <div className="footer-col">
-        <h4>Help</h4>
-        <Link to="/faq">FAQ</Link>
-<Link to="/faq">Contact</Link>
-<Link to="/faq">Shipping</Link>
-      </div>
-
-      {/* POLICIES */}
-      <div className="footer-col">
-        <h4>Policies</h4>
-<Link to="/privacy">Privacy Policy</Link>
-        <Link to="/privacy">Terms & Conditions</Link>
-<Link to="/privacy">Returns</Link>
-      </div>
-
+    <footer style={{
+      padding: "30px",
+      textAlign: "center",
+      background: "#f5f5f5",
+      marginTop: "40px"
+    }}>
+      <p>© 2026 Skincare Store. All rights reserved.</p>
     </footer>
   );
 }
