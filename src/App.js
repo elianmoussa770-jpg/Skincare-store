@@ -10,8 +10,6 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import Privacy from "./pages/Privacy";
 import Category from "./pages/Category";
-import { BrowserRouter } from "react-router-dom";
-
 
 export default function App() {
   return (
@@ -29,11 +27,7 @@ export default function App() {
 <Route path="/category/:name" element={<Category />} />
 
       </Routes>
-root.render(
-  <BrowserRouter basename="/Skincare-store">
-    <App />
-  </BrowserRouter>
-);
+
       {/* ✅ GLOBAL FOOTER */}
       <Footer />
     </>
