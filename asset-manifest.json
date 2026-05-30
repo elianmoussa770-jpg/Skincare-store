@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Skincare-store/static/css/main.b24b2456.css",
+    "main.js": "/Skincare-store/static/js/main.71b9952b.js",
+    "index.html": "/Skincare-store/index.html",
+    "main.b24b2456.css.map": "/Skincare-store/static/css/main.b24b2456.css.map",
+    "main.71b9952b.js.map": "/Skincare-store/static/js/main.71b9952b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b24b2456.css",
+    "static/js/main.71b9952b.js"
+  ]
+}
