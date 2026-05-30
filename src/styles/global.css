@@ -1064,11 +1064,41 @@ body {
 
   /* FOOTER CLEAN */
   .footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 40px 20px;
-  }
+  background: #f8c6d8;
+  padding: 70px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 160px;
+}
+
+.footer h3 {
+  font-size: 22px;
+}
+
+.footer h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #ff4f8b;
+}
 
   /* CATEGORY PAGE */
   .category-card {
