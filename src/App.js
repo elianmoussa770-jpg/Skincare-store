@@ -8,17 +8,26 @@ import FAQ from "./pages/FAQ";
 import Privacy from "./pages/Privacy";
 import Category from "./pages/Category";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/shop" element={<Shop />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/wishlist" element={<Wishlist />} />
-      <Route path="/faq" element={<FAQ />} />
-      <Route path="/privacy" element={<Privacy />} />
-      <Route path="/category/:name" element={<Category />} />
-    </Routes>
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/category/:name" element={<Category />} />
+      </Routes>
+
+      <Footer />
+    </>
   );
 }
