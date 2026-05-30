@@ -1,5 +1,5 @@
 /* =====================
-   BASE RESET (KEEP ONCE ONLY)
+   BASE RESET
 ===================== */
 * {
   margin: 0;
@@ -11,35 +11,14 @@
 body {
   background: #fff;
   color: #222;
-  overflow-x: hidden;
+  margin: 0;
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
-/* =====================
-   GLOBAL WRAPPER
-===================== */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* =====================
-   HEADINGS
-===================== */
-h1, h2, h3 {
-  font-weight: 600;
-}
-
-h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-/* =====================
+/* ======================
    NAVBAR
-===================== */
+====================== */
 .navbar {
   display: flex;
   align-items: center;
@@ -71,10 +50,17 @@ h2 {
   color: #ff4f8b;
 }
 
-.left-nav {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+/* =====================
+   HEADINGS
+===================== */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
 /* =====================
@@ -136,7 +122,7 @@ button:hover {
 }
 
 /* =====================
-   GRIDS (BASE)
+   GRIDS
 ===================== */
 .shop-grid,
 .products-grid {
@@ -171,16 +157,6 @@ button:hover {
 }
 
 /* =====================
-   NEWSLETTER
-===================== */
-.newsletter {
-  width: 100%;
-  background: #fff4f8;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-/* =====================
    FOOTER
 ===================== */
 .footer {
@@ -193,7 +169,17 @@ button:hover {
 }
 
 /* =====================
-   MOBILE FIX (FINAL CLEAN)
+   NEWSLETTER
+===================== */
+.newsletter {
+  width: 100%;
+  background: #fff4f8;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* =====================
+   MOBILE FIX (SAFE ONLY)
 ===================== */
 @media (max-width: 768px) {
 
@@ -236,9 +222,6 @@ button:hover {
   }
 }
 
-/* =====================
-   SMALL PHONE
-===================== */
 @media (max-width: 480px) {
 
   h1 { font-size: 22px; }
@@ -250,37 +233,5 @@ button:hover {
 
   .product-card h3 {
     font-size: 16px;
-  }
-}
-/* =========================
-   SAFE FIX PATCH (DO NOT MODIFY ORIGINAL)
-========================= */
-
-/* Prevent layout overflow issues */
-body {
-  overflow-x: hidden;
-}
-
-/* Fix grid consistency */
-.shop-grid,
-.products-grid,
-.explore-grid,
-.testimonials-grid {
-  box-sizing: border-box;
-}
-
-/* Ensure cards don't shrink weirdly on mobile */
-@media (max-width: 768px) {
-  .shop-grid,
-  .products-grid,
-  .explore-grid,
-  .testimonials-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  .product-card,
-  .shop-card {
-    width: 100%;
-    min-width: unset;
   }
 }
