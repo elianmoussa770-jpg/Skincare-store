@@ -1,17 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
 import ShopProvider from "./context/ShopContext";
 
-import "./styles/global.css"; // MUST match your real path
+import "./styles/global.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <ShopProvider>
-    <BrowserRouter basename="/Skincare-store">
-      <App />
-    </BrowserRouter>
+    <App />
   </ShopProvider>
 );

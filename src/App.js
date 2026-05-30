@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Login from "./pages/Login";
@@ -16,7 +17,6 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <HashRouter>
-
       <Navbar />
 
       <Routes>
@@ -33,7 +33,6 @@ export default function App() {
       </Routes>
 
       <Footer />
-
     </HashRouter>
   );
 }
