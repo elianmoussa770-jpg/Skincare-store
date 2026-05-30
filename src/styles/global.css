@@ -12,14 +12,16 @@
     overflow: hidden;
   }
 
+  @media (max-width: 768px) {
+
   .carousel .slide img {
-    height: 50vh; /* match container */
+    height: 50vh;
     width: 100%;
     object-fit: cover;
-
-    /* makes it feel smoother on touch devices */
-    touch-action: pan-y;
+    object-position: center top;
   }
+
+}
 
   /* if your carousel uses slider wrapper */
   .carousel .slider-wrapper {
