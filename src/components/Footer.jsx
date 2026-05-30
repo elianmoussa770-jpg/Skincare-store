@@ -14,8 +14,8 @@ export default function Footer() {
       {/* SHOP */}
       <div className="footer-col">
         <h4>Shop</h4>
-        <a href="/">Home</a>
-        <a href="/shop">Shop</a>
+        <link to="/home">Home</link>
+        <link to ="/shop">Shop</link>
 <Link to="/shop">All Products</Link>
       </div>
 

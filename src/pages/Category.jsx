@@ -35,25 +35,25 @@ export default function Category() {
 
   const item = data[name];
 
-  if (!data[name]) {
+  if (!item) {
+    return (
+      <div style={{ padding: "100px", textAlign: "center" }}>
+        <h2>Category not found</h2>
+      </div>
+    );
+  }
+
   return (
-    <div style={{ padding: "100px" }}>
-      Category not found
+    <div className="category-page">
+
+      <h1>{item.title}</h1>
+
+      <div className="category-card">
+        <p><b>Description:</b> {item.desc}</p>
+        <p><b>How to use:</b> {item.how}</p>
+        <p><b>Best for:</b> {item.skin}</p>
+      </div>
+
     </div>
   );
-} <h2>Category not found</h2>;
-
-  return (
-  <div className="category-page">
-
-    <h1>{item.title}</h1>
-
-    <div className="category-card">
-      <p><b>Description:</b> {item.desc}</p>
-      <p><b>How to use:</b> {item.how}</p>
-      <p><b>Best for:</b> {item.skin}</p>
-    </div>
-
-  </div>
-);
 }

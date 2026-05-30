@@ -98,15 +98,14 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px;
-  position: sticky;
+
+  position: fixed;
   top: 0;
-  background: rgba(255,255,255,0.9);
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 60px;
+  left: 0;
+  width: 100%;
+
+  background: rgba(255,255,255,0.95);
+  z-index: 9999;
 }
 .nav-links {
   display: flex;
@@ -137,7 +136,9 @@ h2 {
   font-size: 36px;
   margin-bottom: 40px;
 }
-
+body {
+  padding-top: 80px;
+}
 /* =====================
    BUTTONS (GLOBAL)
 ===================== */
@@ -937,17 +938,23 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
-  /* prevent text overflow */
-  h1, h2, h3 {
-    word-wrap: break-word;
+  .shop-grid,
+  .products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
   }
 
-  /* reduce card shadows on small screens */
   .product-card,
   .shop-card,
   .testimonial-card {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+}
+@media (max-width: 480px) {
+
+  h1, h2, h3 {
+    word-wrap: break-word;
   }
 }
