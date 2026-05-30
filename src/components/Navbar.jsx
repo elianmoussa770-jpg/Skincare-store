@@ -2,9 +2,14 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { createPortal } from "react-dom";
+
 export default function Navbar() {
 
-  const { cart, wishlist } = useContext(ShopContext);
+  const context = useContext(ShopContext);
+
+  const cart = context?.cart || [];
+  const wishlist = context?.wishlist || [];
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
