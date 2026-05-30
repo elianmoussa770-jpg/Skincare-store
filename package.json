@@ -2,7 +2,7 @@
   "name": "skincare-store",
   "version": "0.1.0",
   "private": true,
-"homepage": "https://elianmoussa770-jpg.github.io/Skincare-store",
+   "homepage": "https://elianmoussa770-jpg.github.io/Skincare-store",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
