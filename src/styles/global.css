@@ -890,3 +890,64 @@ body {
 .category-card b {
   color: #ff4f8b;
 }
+/* =========================
+   EXTRA MOBILE UX FIXES
+   (ADD ON TOP OF YOUR CURRENT CSS)
+========================= */
+
+@media (max-width: 768px) {
+
+  /* prevent horizontal scrolling issues */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* navbar better alignment */
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* product cards full width feel */
+  .product-card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  /* hero spacing fix */
+  section {
+    padding: 50px 15px;
+  }
+
+  /* buttons full width feel (better UX on phones) */
+  .main-btn,
+  .view-all-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* explore cards spacing fix */
+  .explore-card {
+    height: 220px;
+  }
+
+  /* footer spacing */
+  .footer {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* prevent text overflow */
+  h1, h2, h3 {
+    word-wrap: break-word;
+  }
+
+  /* reduce card shadows on small screens */
+  .product-card,
+  .shop-card,
+  .testimonial-card {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+}
