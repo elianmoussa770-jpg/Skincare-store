@@ -1,7 +1,10 @@
+import Navbar from "./components/Navbar";
+
 export default function App() {
   return (
     <>
-      <h1>TEST HOME</h1>
+      <Navbar />
+      <h1>TEST PAGE</h1>
     </>
   );
 }
