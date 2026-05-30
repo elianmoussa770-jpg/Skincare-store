@@ -1,6 +1,35 @@
 /* =====================
    BASE RESET
 ===================== */
+/* =========================
+   MOBILE CAROUSEL UX FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  .carousel {
+    height: 50vh; /* half screen */
+    overflow: hidden;
+  }
+
+  .carousel .slide img {
+    height: 50vh; /* match container */
+    width: 100%;
+    object-fit: cover;
+
+    /* makes it feel smoother on touch devices */
+    touch-action: pan-y;
+  }
+
+  /* if your carousel uses slider wrapper */
+  .carousel .slider-wrapper {
+    height: 50vh;
+  }
+
+  .carousel .slider {
+    height: 50vh;
+  }
+}
 /* =====================
    RESPONSIVE FIX ONLY (DO NOT TOUCH ORIGINAL CSS)
 ===================== */
