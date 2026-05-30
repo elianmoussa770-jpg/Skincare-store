@@ -13,13 +13,14 @@
   }
 
   @media (max-width: 768px) {
-
+@media (max-width: 768px) {
   .carousel .slide img {
-    height: 50vh;
+    height: auto;
     width: 100%;
-    object-fit: cover;
-    object-position: center top;
+    max-height: 50vh;
+    object-fit: contain;
   }
+}
 
 }
 
