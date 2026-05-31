@@ -46,13 +46,13 @@ git clone https://elianmoussa770-jpg.github.io/Skincare-store
 
 ## 🛍 Shop Page
 
-![Shop Page](./screenshots/products.png)
+![Shop Page](screenshots/products.png)
 
 ---
 
 ## ❤️ Wishlist Page
 
-![Wishlist Page](./screenshots/wishlist.png)
+![Wishlist Page](screenshots/wishlist.png)
 
 ---
 
