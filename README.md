@@ -1,67 +1,94 @@
-# 🧴 Skincare Store (React E-Commerce Project)
+# 🧴 Skincare Store Project
 
-A modern skincare e-commerce website built using **React.js**.  
-This project simulates a real online store with product listing, cart, wishlist, search functionality, and checkout flow.
+## 📌 Project Description
 
----
+The Skincare Store is a responsive e-commerce web application developed using React.js. The website allows users to browse skincare products, search for products, add items to a shopping cart or wishlist, and complete a checkout process.
 
-## 🚀 Project Description
-
-This project is a fully responsive skincare store website that allows users to:
-
-- Browse skincare products
-- Search products in real time
-- Add/remove items from cart
-- Add/remove items from wishlist
-- Complete checkout process
-- View order success page
-- Navigate using a responsive navbar and footer
-
-The goal of this project is to practice **React state management, routing, and component-based UI design**.
+The application demonstrates modern front-end development techniques and responsive web design principles through reusable React components, state management, and client-side routing.
 
 ---
 
-## 🛠️ Technologies Used
+## ⚙️ Setup Instructions
 
-- React.js
-- React Router DOM
-- Context API (State Management)
-- CSS (Responsive Design)
-- JavaScript (ES6+)
+### Clone the Repository
 
----
-
-## 📦 Setup Instructions
-
-### 1. Clone the repository
 ```bash
-git clone https://elianmoussa770-jpg.github.io/Skincare-store
-## 🏠 Home Page
+git clone https://github.com/elianmoussa770-jpg/Skincare-store.git
+cd Skincare-store
+```
 
-![Home Page](./screenshots/home-resp.png)
-(./screenshots/home1.png)
-(./screenshots/home2.png)
-(./screenshots/home3.png)
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Application
+
+```bash
+npm start
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
 ---
 
-## 🛍 Shop Page
+## 📸 Screenshots of the UI
 
-![Shop Page](screenshots/products.png)
+### 🏠 Home Page
 
----
+![Home Page](./screenshots/home1.png)
 
-## ❤️ Wishlist Page
+### 📱 Responsive Home Page
 
-![Wishlist Page](screenshots/wishlist.png)
+![Responsive Home Page](./screenshots/home-resp.png)
 
----
+### 🛍️ Shop Page
 
-## 🛒 Cart Page
+![Shop Page](./screenshots/products.png)
+
+### ❤️ Wishlist Page
+
+![Wishlist Page](./screenshots/wishlist.png)
+
+### 🛒 Cart Page
 
 ![Cart Page](./screenshots/cart.png)
 
----
-
-## 💳 Checkout Page
+### 💳 Checkout Page
 
 ![Checkout Page](./screenshots/checkout.png)
+
+---
+
+## 🧑‍💻 Technologies Used
+
+* React.js
+* React Router DOM
+* JavaScript (ES6+)
+* CSS3
+* HTML5
+* Context API
+* GitHub Pages
+
+---
+
+## ✨ Features
+
+* Responsive design for desktop and mobile devices
+* Product search functionality
+* Shopping cart management
+* Wishlist functionality
+* Checkout page with form validation
+* Success page after order placement
+* Dynamic navigation using React Router
+
+---
+
+## 👨‍💻 Author
+
+**Elian Moussa**
