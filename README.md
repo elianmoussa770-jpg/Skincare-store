@@ -42,6 +42,8 @@ npm run build
 ### 🏠 Home Page
 
 ![Home Page](./screenshots/home1.png)
+![Home Page](./screenshots/home2.png)
+![Home Page](./screenshots/home3.png)
 
 ### 📱 Responsive Home Page
 
@@ -62,6 +64,16 @@ npm run build
 ### 💳 Checkout Page
 
 ![Checkout Page](./screenshots/checkout.png)
+
+###  Privacy Page
+![Privacy Page](./screenshots/privacy.png)
+
+###  FAQ Page
+![FAQ Page](./screenshots/faq.png)
+
+###  Description Page
+![Category Description Page](./screenshots/description.png)
+
 
 ---
 
