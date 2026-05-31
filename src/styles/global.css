@@ -1,14 +1,9 @@
-/* =====================
-   BASE RESET
-===================== */
-/* =========================
-   MOBILE CAROUSEL UX FIX
-========================= */
+
 
 @media (max-width: 768px) {
 
   .carousel {
-    height: 50vh; /* half screen */
+    height: 50vh; 
     overflow: hidden;
   }
 
@@ -24,7 +19,7 @@
 
 }
 
-  /* if your carousel uses slider wrapper */
+  
   .carousel .slider-wrapper {
     height: 50vh;
   }
@@ -33,9 +28,7 @@
     height: 50vh;
   }
 }
-/* =====================
-   RESPONSIVE FIX ONLY (DO NOT TOUCH ORIGINAL CSS)
-===================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +41,6 @@ body {
   color: #222;
 }
 
-/* GLOBAL PAGE WRAPPER */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -139,9 +131,7 @@ body {
   margin: 0;
 }
 
-/* ======================
-   NAVBAR
-====================== */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -172,14 +162,11 @@ body {
   color: #ff4f8b;
 }
 
-/* =====================
-   HEADINGS
-===================== */
+
 h1, h2, h3 {
   font-weight: 600;
 }
 
-/* Center ALL section titles */
 h2 {
   text-align: center;
   font-size: 36px;
@@ -188,9 +175,7 @@ h2 {
 body {
   padding-top: 80px;
 }
-/* =====================
-   BUTTONS (GLOBAL)
-===================== */
+
 button {
   cursor: pointer;
   border: none;
@@ -217,9 +202,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* =====================
-   HERO CAROUSEL
-===================== */
+
 .carousel .slide img {
   width: 100%;
   height: 750px;
@@ -231,9 +214,7 @@ button:hover {
   position: relative;
   z-index: 1;
 }
-/* =====================
-   PRODUCT CARD
-===================== */
+
 .product-card {
   min-width: 260px;
   background: white;
@@ -272,9 +253,7 @@ button:hover {
   margin-top: 10px;
 }
 
-/* =====================
-   PRODUCTS SCROLL
-===================== */
+
 .products-scroll {
   display: flex;
   gap: 20px;
@@ -288,9 +267,7 @@ button:hover {
   display: none;
 }
 
-/* =====================
-   VIEW ALL BUTTON
-===================== */
+
 .view-all-btn {
   margin-top: 40px;
   padding: 12px 28px;
@@ -308,9 +285,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* =====================
-   EXPLORE SECTION
-===================== */
+
 .explore-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -355,9 +330,7 @@ button:hover {
   opacity: 1;
 }
 
-/* =====================
-   TESTIMONIALS
-===================== */
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -398,9 +371,7 @@ button:hover {
   font-weight: 600;
 }
 
-/* =====================
-   NEWSLETTER (FULL WIDTH FIXED)
-===================== */
+
 .newsletter {
   width: 100%;
   background: #fff4f8;
@@ -453,9 +424,7 @@ button:hover {
   justify-content: center;
 }
 
-/* =====================
-   FOOTER
-===================== */
+
 footer {
   background: #f8c6d8;
   padding: 40px;
@@ -501,9 +470,7 @@ footer {
   color: #ff4f8b;
 }
 
-/* =====================
-   SECTION LAYOUT (SAFE)
-===================== */
+
 section {
   width: 100%;
   padding: 80px 20px;
@@ -516,7 +483,6 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* FIX: make Shop page grid work with your existing class */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -573,12 +539,11 @@ section {
   margin: 10px 0;
 }
 
-/* UPDATED BUTTON STYLE */
 .qty button {
   width: 32px;
   height: 32px;
-  border-radius: 6px;   /* ❌ no circle anymore */
-  background: #f5f5f5;  /* light neutral instead of pink */
+  border-radius: 6px;   
+  background: #f5f5f5;  
   color: #222;
   font-size: 16px;
   font-weight: bold;
@@ -602,7 +567,6 @@ section {
   font-size: 20px;
 }
 
-/* CART NUMBER */
 .badge {
   position: absolute;
   top: -8px;
@@ -618,7 +582,6 @@ section {
   justify-content: center;
 }
 
-/* WISHLIST DOT */
 .dot {
   position: absolute;
   top: 0;
@@ -666,11 +629,10 @@ section {
   cursor: pointer;
 }
 
-/* dropdown menu */
 .dropdown-menu {
   position: absolute;
   top: 70px;
-  left: 20px;   /* ✅ CHANGE THIS */
+  left: 20px;   
   background: white;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   border-radius: 12px;
@@ -692,12 +654,11 @@ section {
   color: #ff4f8b;
 }
 
-/* optional: show only on mobile */
 @media (max-width: 768px) {
   .menu-icon {
   font-size: 28px;
   cursor: pointer;
-  display: block; /* IMPORTANT */
+  display: block; 
   color: #222;
 }
   .nav-links {
@@ -707,11 +668,11 @@ section {
 }
 .left-nav {
    display: flex;
-  align-items: center;   /* key fix */
+  align-items: center;   
   gap: 12px;
 }
 .left-nav h2 {
-  margin: 0;            /* removes vertical misalignment */
+  margin: 0;            
   line-height: 1;
 }
 .menu-icon {
@@ -719,7 +680,7 @@ section {
   cursor: pointer;
 }
 .product-card {
-  position: relative; /* VERY IMPORTANT */
+  position: relative; 
 }
 
 .wishlist-icon {
@@ -729,7 +690,6 @@ section {
   cursor: pointer;
   font-size: 20px;
 }
-/* dark background overlay */
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -753,7 +713,7 @@ section {
 }
 
 .sidebar a {
-  display: block;        /* forces each link to new line */
+  display: block;        
   text-decoration: none;
   color: #222;
   font-size: 18px;
@@ -769,21 +729,18 @@ body {
   position: relative;
   z-index: 0;
 }
-/* PAGE WRAPPER */
 .faq-page {
   max-width: 900px;
   margin: 80px auto;
   padding: 20px;
 }
 
-/* MAIN TITLE */
 .faq-page h1 {
   text-align: center;
   font-size: 42px;
   margin-bottom: 40px;
 }
 
-/* SECTIONS */
 .faq-section {
   margin-bottom: 40px;
   padding: 20px;
@@ -792,14 +749,12 @@ body {
   box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
 
-/* SECTION TITLE */
 .faq-section h2 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #ff4f8b;
 }
 
-/* QUESTIONS */
 .faq-item {
   margin-bottom: 15px;
   padding: 12px;
@@ -811,32 +766,27 @@ body {
   background: #fff4f8;
 }
 
-/* QUESTION TEXT */
 .faq-item h3 {
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-/* ANSWER TEXT */
 .faq-item p {
   font-size: 15px;
   color: #555;
 }
-/* PAGE WRAPPER */
 .legal-page {
   max-width: 900px;
   margin: 80px auto;
   padding: 20px;
 }
 
-/* TITLE */
 .legal-page h1 {
   text-align: center;
   font-size: 40px;
   margin-bottom: 40px;
 }
 
-/* SECTIONS */
 .legal-section {
   background: #fff;
   padding: 25px;
@@ -850,21 +800,17 @@ body {
   transform: translateY(-3px);
 }
 
-/* SECTION HEADINGS */
 .legal-section h2 {
   color: #ff4f8b;
   margin-bottom: 10px;
 }
 
-/* TEXT */
 .legal-section p {
   color: #555;
   font-size: 15px;
   margin-bottom: 8px;
 }
-/* =====================
-   LOGIN PAGE
-===================== */
+
 
 .login-container {
   max-width: 420px;
@@ -918,7 +864,6 @@ body {
   color: #222;
 }
 
-/* MAIN CARD */
 .category-card {
   max-width: 800px;
   margin: auto;
@@ -930,7 +875,6 @@ body {
   line-height: 1.6;
 }
 
-/* TEXT STYLING */
 .category-card p {
   margin-bottom: 15px;
   color: #555;
@@ -940,48 +884,38 @@ body {
 .category-card b {
   color: #ff4f8b;
 }
-/* =========================
-   EXTRA MOBILE UX FIXES
-   (ADD ON TOP OF YOUR CURRENT CSS)
-========================= */
+
 
 @media (max-width: 768px) {
 
-  /* prevent horizontal scrolling issues */
   body {
     overflow-x: hidden;
   }
 
-  /* navbar better alignment */
   .navbar {
     justify-content: space-between;
     align-items: center;
   }
 
-  /* product cards full width feel */
   .product-card {
     width: 100%;
     min-width: unset;
   }
 
-  /* hero spacing fix */
   section {
     padding: 50px 15px;
   }
 
-  /* buttons full width feel (better UX on phones) */
   .main-btn,
   .view-all-btn {
     width: 100%;
     text-align: center;
   }
 
-  /* explore cards spacing fix */
   .explore-card {
     height: 220px;
   }
 
-  /* footer spacing */
   .footer {
     gap: 20px;
   }
@@ -1007,38 +941,32 @@ body {
     word-wrap: break-word;
   }
 }
-/* =========================
-   MOBILE REDESIGN FIX
-========================= */
+
 
 @media (max-width: 768px) {
 
-  /* NAVBAR - CLEAN MOBILE STYLE */
   .navbar {
     padding: 12px 15px;
     flex-direction: row;
   }
 
   .nav-links {
-    display: none; /* keeps it clean */
+    display: none; 
   }
 
   .menu-icon {
     font-size: 26px;
   }
 
-  /* HERO / CAROUSEL */
   .carousel .slide img {
     height: 220px;
     object-fit: cover;
   }
 
-  /* SECTION SPACING FIX */
   section {
     padding: 40px 15px;
   }
 
-  /* PRODUCT + SHOP CARDS */
   .product-card,
   .shop-card {
     width: 100%;
@@ -1065,7 +993,6 @@ body {
     max-width: 100%;
   }
 }
-  /* FORCED SINGLE COLUMN GRID */
   .shop-grid,
   .products-grid,
   .explore-grid,
@@ -1074,7 +1001,6 @@ body {
     gap: 15px;
   }
 
-  /* BUTTONS FIX */
   .main-btn,
   .view-all-btn {
     width: 100%;
@@ -1096,7 +1022,6 @@ body {
     font-size: 12px;
   }
 }
-  /* FOOTER CLEAN */
   .footer {
   background: #f8c6d8;
   padding: 70px 60px;
@@ -1134,7 +1059,6 @@ body {
   color: #ff4f8b;
 }
 
-  /* CATEGORY PAGE */
   .category-card {
     padding: 20px;
   }
@@ -1158,9 +1082,7 @@ body {
     font-size: 16px;
   }
 }
-/* =====================
-   HERO CAROUSEL RESPONSIVE
-===================== */
+
 
 .carousel .slide img {
   width: 100%;
