@@ -38,6 +38,9 @@ npm run build
 ---
 
 ## 📸 Screenshots of the UI
+### 📱 Responsive Home Page
+
+![Responsive Home Page](./screenshots/home-resp.png)
 
 ### 🏠 Home Page
 
@@ -45,9 +48,7 @@ npm run build
 ![Home Page](./screenshots/home2.png)
 ![Home Page](./screenshots/home3.png)
 
-### 📱 Responsive Home Page
 
-![Responsive Home Page](./screenshots/home-resp.png)
 
 ### 🛍️ Shop Page
 
