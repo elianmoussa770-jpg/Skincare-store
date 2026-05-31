@@ -72,7 +72,7 @@ npm run build
 ###  FAQ Page
 ![FAQ Page](./screenshots/faq.png)
 
-###  Description Page
+### Category Description Page
 ![Category Description Page](./screenshots/description.png)
 
 
