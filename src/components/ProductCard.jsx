@@ -6,7 +6,6 @@ export default function ProductCard({ product }) {
   const { cart, setCart, wishlist, setWishlist } = useContext(ShopContext);
   const [qty, setQty] = useState(1);
 
-  // ❤️ WISHLIST TOGGLE
   const isInWishlist = wishlist.find((p) => p.id === product.id);
 
   const toggleWishlist = () => {
@@ -17,7 +16,6 @@ export default function ProductCard({ product }) {
     }
   };
 
-  // 🛒 ADD TO CART
   const addToCart = () => {
     setCart([...cart, { ...product, qty }]);
   };

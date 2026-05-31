@@ -17,7 +17,6 @@ export default function LoginModel() {
       return;
     }
 
-    // add item after login (demo logic)
     setCart((prev) => [...prev, { name: "Product", qty: 1 }]);
 
     setShowLogin(false);

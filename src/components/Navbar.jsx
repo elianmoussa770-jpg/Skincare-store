@@ -43,7 +43,7 @@ const navigate = useNavigate();
       value={search}
       onChange={(e) => {
         setSearch(e.target.value);
-        navigate("/shop"); // 🚀 instantly go to shop
+        navigate("/shop"); 
       }}
       className="nav-search"
     />

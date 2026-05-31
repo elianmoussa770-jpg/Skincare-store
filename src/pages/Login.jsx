@@ -15,7 +15,6 @@ export default function Login() {
       return;
     }
 
-    // 🚀 just go to shop (no saving anything)
     navigate("/shop");
   };
 
